@@ -141,8 +141,12 @@ C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\bin\Newtonsoft.Json.xml
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\bin\Antlr3.Runtime.pdb
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.csproj.AssemblyReference.cache
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.csproj.CoreCompileInputs.cache
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.csproj.CopyComplete
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.dll
 C:\Users\spate\Source\Repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.pdb
+C:\Users\spate\source\repos\RealEstate\PropertiesTest\obj\Debug\PropertiesTest.csproj.AssemblyReference.cache
+C:\Users\spate\source\repos\RealEstate\PropertiesTest\bin\EntityFramework.dll
+C:\Users\spate\source\repos\RealEstate\PropertiesTest\bin\EntityFramework.SqlServer.dll
+C:\Users\spate\source\repos\RealEstate\PropertiesTest\bin\EntityFramework.xml
+C:\Users\spate\source\repos\RealEstate\PropertiesTest\bin\EntityFramework.SqlServer.xml

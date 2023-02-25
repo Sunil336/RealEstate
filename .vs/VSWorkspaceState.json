@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PropertiesTest"
   ],
-  "SelectedNode": "\\PropertiesTest.sln",
+  "SelectedNode": "\\PropertiesTest\\Login.aspx",
   "PreviewInSolutionExplorer": false
 }

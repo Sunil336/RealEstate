@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Property2023" Class="EntityUserMasterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-UMLSIA0;Initial Catalog=Property2023;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.insertEntityUserRegister" Method="insertEntityUserRegister">
+    <Parameter Name="inEntityUserId" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="stUserName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stFirstName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stLastName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stGender" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stEmail" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stPassword" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stMobileNo" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="stUserRole" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.loginUser" Method="loginUser">
+    <Parameter Name="stUserName" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="stPassword" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="loginUserResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobileNo" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UserRole" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getAdminLogin" Method="getAdminLogin">
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -44,12 +44,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -112,6 +121,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\app.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -124,8 +136,66 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="DBML\EntityUserMaster.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>EntityUserMaster.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DBML\EntityUserMaster.dbml.layout">
+      <DependentUpon>EntityUserMaster.dbml</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="img\600.jpg" />
+    <Content Include="img\bg1.jpg" />
+    <Content Include="img\bg10.jpg" />
+    <Content Include="img\bg2.jpg" />
+    <Content Include="img\bg3.jpg" />
+    <Content Include="img\bg4.jpg" />
+    <Content Include="img\bg5.jpg" />
+    <Content Include="img\bg6.jpg" />
+    <Content Include="img\bg7.jpg" />
+    <Content Include="img\bg8.jpg" />
+    <Content Include="img\bg9.jpg" />
+    <Content Include="img\dummy.png" />
+    <Content Include="img\favicon\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="img\favicon\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="img\favicon\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="img\favicon\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="img\favicon\apple-touch-icon.png" />
+    <Content Include="img\favicon\favicon.ico" />
+    <Content Include="img\logo-single.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\mb-sample.jpg" />
+    <Content Include="img\mockup.png" />
+    <Content Include="img\profile-bg.jpg" />
+    <Content Include="img\user\01.jpg" />
+    <Content Include="img\user\02.jpg" />
+    <Content Include="img\user\03.jpg" />
+    <Content Include="img\user\04.jpg" />
+    <Content Include="img\user\05.jpg" />
+    <Content Include="img\user\06.jpg" />
+    <Content Include="img\user\07.jpg" />
+    <Content Include="img\user\08.jpg" />
+    <Content Include="img\user\09.jpg" />
+    <Content Include="img\user\10.jpg" />
+    <Content Include="img\user\9.jpg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\demo\demo-datatable.js" />
+    <Content Include="js\demo\demo-flot.js" />
+    <Content Include="js\demo\demo-forms.js" />
+    <Content Include="js\demo\demo-jqcloud.js" />
+    <Content Include="js\demo\demo-jqgrid.js" />
+    <Content Include="js\demo\demo-nestable.js" />
+    <Content Include="js\demo\demo-panels.js" />
+    <Content Include="js\demo\demo-rtl.js" />
+    <Content Include="js\demo\demo-search.js" />
+    <Content Include="js\demo\demo-sortable.js" />
+    <Content Include="js\demo\demo-upload.js" />
+    <Content Include="js\demo\demo-vector-map.js" />
+    <Content Include="js\demo\demo-wizard.js" />
+    <Content Include="js\demo\demo-xeditable.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -155,6 +225,122 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="vendor\animate.css\animate.min.css" />
+    <Content Include="vendor\animo.js\animo.js" />
+    <Content Include="vendor\blueimp-canvas-to-blob\js\canvas-to-blob.js" />
+    <Content Include="vendor\blueimp-file-upload\css\jquery.fileupload.css" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-audio.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-image.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-process.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-validate.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload-video.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.fileupload.js" />
+    <Content Include="vendor\blueimp-file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="vendor\blueimp-load-image\js\load-image.all.min.js" />
+    <Content Include="vendor\blueimp-tmpl\js\tmpl.js" />
+    <Content Include="vendor\bootstrap-filestyle\src\bootstrap-filestyle.js" />
+    <Content Include="vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="vendor\bootstrap-tour\build\css\bootstrap-tour-standalone.css" />
+    <Content Include="vendor\bootstrap-tour\build\js\bootstrap-tour-standalone.js" />
+    <Content Include="vendor\bootstrap-wysiwyg\bootstrap-wysiwyg.js" />
+    <Content Include="vendor\bootstrap-wysiwyg\external\jquery.hotkeys.js" />
+    <Content Include="vendor\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="vendor\chart.js\dist\Chart.js" />
+    <Content Include="vendor\chartist\dist\chartist.js" />
+    <Content Include="vendor\chartist\dist\chartist.min.css" />
+    <Content Include="vendor\chosen_v1.2.0\chosen.jquery.min.js" />
+    <Content Include="vendor\chosen_v1.2.0\chosen.min.css" />
+    <Content Include="vendor\cropper\dist\cropper.css" />
+    <Content Include="vendor\cropper\dist\cropper.js" />
+    <Content Include="vendor\d3\d3.min.js" />
+    <Content Include="vendor\datatables-buttons\js\buttons.bootstrap.js" />
+    <Content Include="vendor\datatables-buttons\js\buttons.colVis.js" />
+    <Content Include="vendor\datatables-buttons\js\buttons.flash.js" />
+    <Content Include="vendor\datatables-buttons\js\buttons.html5.js" />
+    <Content Include="vendor\datatables-buttons\js\buttons.print.js" />
+    <Content Include="vendor\datatables-buttons\js\dataTables.buttons.js" />
+    <Content Include="vendor\datatables-colvis\css\dataTables.colVis.css" />
+    <Content Include="vendor\datatables-colvis\js\dataTables.colVis.js" />
+    <Content Include="vendor\datatables-responsive\js\dataTables.responsive.js" />
+    <Content Include="vendor\datatables-responsive\js\responsive.bootstrap.js" />
+    <Content Include="vendor\dataTables.fontAwesome\index.css" />
+    <Content Include="vendor\datatables\media\css\dataTables.bootstrap.css" />
+    <Content Include="vendor\datatables\media\js\dataTables.bootstrap.js" />
+    <Content Include="vendor\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="vendor\eonasdan-bootstrap-datetimepicker\build\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="vendor\eonasdan-bootstrap-datetimepicker\build\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="vendor\flatdoc\flatdoc.js" />
+    <Content Include="vendor\flot-spline\js\jquery.flot.spline.min.js" />
+    <Content Include="vendor\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="vendor\flot\jquery.flot.categories.js" />
+    <Content Include="vendor\flot\jquery.flot.js" />
+    <Content Include="vendor\flot\jquery.flot.pie.js" />
+    <Content Include="vendor\flot\jquery.flot.resize.js" />
+    <Content Include="vendor\flot\jquery.flot.time.js" />
+    <Content Include="vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="vendor\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="vendor\fullcalendar\dist\gcal.js" />
+    <Content Include="vendor\html.sortable\dist\html.sortable.js" />
+    <Content Include="vendor\ika.jvectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="vendor\ika.jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="vendor\ika.jvectormap\jquery-jvectormap-us-mill-en.js" />
+    <Content Include="vendor\ika.jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="vendor\jqcloud2\dist\jqcloud.css" />
+    <Content Include="vendor\jqcloud2\dist\jqcloud.js" />
+    <Content Include="vendor\jqgrid\css\ui.jqgrid.css" />
+    <Content Include="vendor\jqgrid\js\i18n\grid.locale-en.js" />
+    <Content Include="vendor\jqgrid\js\jquery.jqGrid.js" />
+    <Content Include="vendor\jQuery-gMap\jquery.gmap.min.js" />
+    <Content Include="vendor\jquery-knob\js\jquery.knob.js" />
+    <Content Include="vendor\jquery-localize-i18n\dist\jquery.localize.js" />
+    <Content Include="vendor\jQuery-Storage-API\jquery.storageapi.js" />
+    <Content Include="vendor\jquery-ui\jquery-ui.js" />
+    <Content Include="vendor\jquery-ui\themes\smoothness\jquery-ui.css" />
+    <Content Include="vendor\jquery-ui\ui\widget.js" />
+    <Content Include="vendor\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="vendor\jquery.easing\js\jquery.easing.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\dist\jquery.easypiechart.js" />
+    <Content Include="vendor\jquery.inputmask\dist\jquery.inputmask.bundle.js" />
+    <Content Include="vendor\jquery.steps\build\jquery.steps.js" />
+    <Content Include="vendor\jqueryui-touch-punch\jquery.ui.touch-punch.min.js" />
+    <Content Include="vendor\jquery\dist\jquery.js" />
+    <Content Include="vendor\loaders.css\loaders.css" />
+    <Content Include="vendor\matchMedia\matchMedia.js" />
+    <Content Include="vendor\mjolnic-bootstrap-colorpicke\dist\css\bootstrap-colorpicker.css" />
+    <Content Include="vendor\mjolnic-bootstrap-colorpicke\dist\js\bootstrap-colorpicker.js" />
+    <Content Include="vendor\modernizr\modernizr.custom.js" />
+    <Content Include="vendor\moment\min\moment-with-locales.min.js" />
+    <Content Include="vendor\morris.js\morris.css" />
+    <Content Include="vendor\morris.js\morris.js" />
+    <Content Include="vendor\nestable\jquery.nestable.js" />
+    <Content Include="vendor\parsleyjs\dist\parsley.min.js" />
+    <Content Include="vendor\raphael\raphael.js" />
+    <Content Include="vendor\rickshaw\rickshaw.js" />
+    <Content Include="vendor\rickshaw\rickshaw.min.css" />
+    <Content Include="vendor\screenfull\dist\screenfull.js" />
+    <Content Include="vendor\seiyria-bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="vendor\seiyria-bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="vendor\select2-bootstrap-theme\dist\select2-bootstrap.css" />
+    <Content Include="vendor\select2\dist\css\select2.css" />
+    <Content Include="vendor\select2\dist\js\select2.js" />
+    <Content Include="vendor\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="vendor\skycons\skycons.js" />
+    <Content Include="vendor\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="vendor\sparkline\index.js" />
+    <Content Include="vendor\spinkit\css\spinkit.css" />
+    <Content Include="vendor\sweetalert\dist\sweetalert.css" />
+    <Content Include="vendor\sweetalert\dist\sweetalert.min.js" />
+    <Content Include="vendor\weather-icons\css\weather-icons-wind.min.css" />
+    <Content Include="vendor\weather-icons\css\weather-icons.min.css" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="vendor\whirl\dist\whirl.css" />
+    <Content Include="vendor\x-editable\dist\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="vendor\x-editable\dist\bootstrap3-editable\js\bootstrap-editable.min.js" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -177,6 +363,18 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\EntityUserMaster.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityUserMaster.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -195,6 +393,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,12 +409,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -217,17 +424,38 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="vendor\form-imagecrop.html\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.eot_" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\i18n\site-en.json" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.eot_" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.eot_" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="vendor\weather-icons\font\weathericons-regular-webfont.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
