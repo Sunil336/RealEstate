@@ -849,7 +849,7 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </section>
-            <hr />
+          
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> -Properties 2023</p>
 
